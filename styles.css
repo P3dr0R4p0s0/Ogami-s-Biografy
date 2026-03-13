@@ -121,6 +121,10 @@ body {
         animation: tremer 0.1xs infinite;
     }
 
+    .texto {
+        clear: left;
+    }
+
     .linha {
         height: 4px;
         width: 100%;
@@ -150,7 +154,21 @@ body {
         font-family: Zekton;
         font-size: 20px;
     }
-}
 
+    .title3 {
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .galeria {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
 
 
