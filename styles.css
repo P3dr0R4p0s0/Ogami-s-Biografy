@@ -1,36 +1,79 @@
+@font-face {
+    font-family: Eurostile;
+    src: url("Eurose\ Wide-Heavy\ Regular.ttf");
+} /* Eurostile */
+@font-face {
+    font-family: Zekton;
+    src: url("Zekton\ Rg.otf");
+} /* Zekton */
+@font-face {
+    font-family: Alphakind;
+    src: url("Alphakind.ttf");
+}
+
+@keyframes tremer{
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(2px, -2px); }
+  50% { transform: translate(-2px, 2px); }
+  75% { transform: translate(2px, 2px); }
+  100% { transform: translate(0px, 0px); }
+} /*Animação*/
+
 body {
     margin: 0;
     background-color: #96cedf;
     text-align: center;
-    h1 {
-        font-family: arial;
-        font-size: 90px;
-        font-weight: bold;
-        background: linear-gradient(
-            180deg,
-            red,
-            orange
-        );
-
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    };
-    h2 {
+    .title {
+        text-align: left;
         font-family: arial;
         font-size: 40px;
         font-weight: bold;
-        background: linear-gradient(
-            90deg,
-            red,
-            orange,
-            yellow,
-            green,
-            blue,
-            purple
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background: #78a5b2;
+        color: darkred;
+    };
+    .subtitle {
+        text-align: left;
+        font-size: 30;
+        background: #78a5b2;
     }
+
+    .img{
+        margin: auto;
+        float: left;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+
+    .name {
+        text-align: left;
+        font-family: Eurostile;
+        font-weight: bold;
+    }
+
+    .pronomes {
+        text-align: left;
+        font-size: 30px;
+        font-family: zekton;
+    }
+
+    .biografia {
+        text-align: left;
+        font-size: 25px;
+        font-family: zekton;
+    }
+
+    .corfavorita {
+        text-align: left;
+        font-size: 25px;
+        font-family: zekton;
+        color: red;
+        font-weight: bold;
+    }
+
+    .rs {
+        clear: left;
+    }
+
     p {
         font-family: Arial;
         font-size: 30;
@@ -61,6 +104,53 @@ body {
         font-weight: bold;
         border-radius: 8px;
     }
+
+    .botao {
+        background: #96cedf;
+        color: red;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 40px;
+        display: inline-block;
+        font-family: arial;
+        font-weight: bold;
+    }
+
+    .botao:hover .texto {    
+        animation: tremer 0.1xs infinite;
+    }
+
+    .linha {
+        height: 4px;
+        width: 100%;
+        opacity: 0.6;
+        background: repeating-linear-gradient(
+            -45deg,
+            black,
+            black 4px,
+            transparent 4px,
+            transparent 8px
+        );
+    }
+
+    .pr {
+        font-family: Eurostile;
+        width: bold;
+    }
+
+    .pergunta {
+        text-align: left;
+        font-family: Alphakind;
+        font-size: 25px;
+    }
+
+    .resposta {
+        text-align: left;
+        font-family: Zekton;
+        font-size: 20px;
+    }
 }
+
 
 
