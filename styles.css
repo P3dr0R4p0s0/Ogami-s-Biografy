@@ -208,8 +208,54 @@ body {
         font-size: 30px;
         cursor: pointer;
     }
-    
-}
+
+    .carrossel-infinito {
+        color: #000;
+        width: 90%;
+        overflow: hidden;
+        -webkit-mask: linear-gradient(
+            90deg,
+            transparent,
+            #fff 20%,
+            #fff 80%,
+            transparent
+        );
+        mask: linear-gradient(
+            90deg,
+            transparent,
+            #fff 20%,
+            #fff 80%,
+            transparent
+        );
+    }
+
+    .carrossel-infinito .carrossel-iner {
+            width: max-content;
+            padding: 1em 0;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1em;
+            list-style: none;
+            animation: move 10s linear infinite;
+    }
+
+    .carrossel-infinito .pt {
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 4px;
+    }
+
+    .carrossel-infinito .pt span {
+            margin: 0 0.5em;
+    }
+}  
+
+@keyframes move {
+        to {
+            transform: 
+            translate(calc(-50% - 0.5em));
+        }
+    }
 
 /* ogami */
 
