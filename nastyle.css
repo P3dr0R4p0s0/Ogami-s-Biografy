@@ -1,0 +1,16 @@
+html {
+    background-color: black;
+} 
+
+.title {
+    color: green;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content {
+    color: green;
+    font-family: monospace;
+    font-size: 20px;
+}
