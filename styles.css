@@ -276,4 +276,13 @@ body {
         }
     }
 
+.notas {
+    text-decoration: none;
+    color: black;
+}
+.tfooter {
+    font-size: 10px;
+}
+
+
 /* ogami */
